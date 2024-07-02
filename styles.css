@@ -1,0 +1,113 @@
+/* 共用樣式 */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    padding: 0;
+}
+
+h1,
+h2,
+h3 {
+    margin-bottom: 10px;
+}
+
+label {
+    display: inline-block;
+    width: 100px;
+    margin-right: 10px;
+}
+
+input,
+select {
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 200px;
+}
+
+button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* 賽道容器樣式 */
+#track-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* 單個賽道樣式 */
+.track {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    position: relative;
+    overflow: hidden; /* 防止圖片超出容器 */
+}
+
+.track img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    transition: opacity 0.3s ease; /* 平滑過渡效果 */
+}
+
+.selected {
+    border: 2px solid red;
+}
+
+.track img.hover-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0; /* 初始設為透明 */
+    z-index: 0; /* 確保圖片在文字下方 */
+}
+
+.track:hover img.hover-image {
+    opacity: 1; /* hover 時顯示 */
+}
+
+.track:hover img.main-image {
+    opacity: 0; /* hover 時隱藏 */
+}
+
+.track h2,
+.track p {
+    position: relative;
+    z-index: 1; /* 確保文字顯示在圖片上方 */
+    background-color: rgba(255, 255, 255, 0.7); /* 背景色加透明度，讓文字更清晰 */
+}
+
+#selected-tracks {
+    margin-bottom: 20px;
+}
+
+#selected-tracks-container {
+    margin-bottom: 10px;
+}
+
+#randomized-groups {
+    margin-top: 20px;
+}
+
+.group {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}

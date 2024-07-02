@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>跑跑卡丁車飄移賽道抽選</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>跑跑卡丁車飄移賽道抽選</h1>
+    <div id="selected-tracks">
+        <h2>已選取賽道</h2>
+        <div id="selected-tracks-container"></div>
+    </div>
+    <div>
+        <label for="difficulty">難度:</label>
+        <select id="difficulty">
+            <option value="all">全部</option>
+        </select>
+    </div>
+    <div>
+        <label for="theme">主題:</label>
+        <select id="theme">
+            <option value="all">全部</option>
+        </select>
+    </div>
+    <div>
+        <label for="search">搜尋:</label>
+        <input type="text" id="search" placeholder="搜尋賽道名稱">
+    </div>
+    <div>
+        <label for="numTracks">每組抽取賽道數:</label>
+        <input type="number" id="numTracks" min="1" value="1">
+    </div>
+    <div>
+        <label for="numGroups">抽取組數:</label>
+        <input type="number" id="numGroups" min="1" value="1">
+    </div>
+    <button id="select-all-button">全選</button>
+    <button id="clear-selection-button">清空選擇</button>
+    <button id="randomize-button">隨機選擇賽道</button>
+    <div id="randomized-groups">
+        <h2>隨機組合</h2>
+        <div id="randomized-groups-container"></div>
+    </div>
+    <div id="track-container"></div>
+    <script src="tracks.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
