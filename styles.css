@@ -115,7 +115,7 @@ button:hover {
 /* 響應式設計 */
 @media (max-width: 600px) {
     .track {
-        width: calc(50% - 35px); /* 兩列佈局，間距為 20px */
+        width: calc(50% - 40px); /* 兩列佈局，間距為 20px */
     }
 
     button {
