@@ -60,7 +60,7 @@ function displayTracks(tracks) {
         const trackElement = document.createElement('div');
         trackElement.className = 'track';
         trackElement.innerHTML = `
-            <img src="images/${track.主題} ${track.名稱}.png" alt="${track.名稱}" class="main-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <img src="images/${track.主題} ${track.名稱}.webp" alt="${track.名稱}" class="main-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
             <img src="images2/${track.主題} ${track.名稱}.png" alt="${track.名稱}" class="hover-image" onerror="this.style.display='none'; this.previousElementSibling.style.display='block';">
             <h2>${track.名稱}</h2>
             <p>難度: ${track.難度}</p>
